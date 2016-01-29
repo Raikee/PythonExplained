@@ -1,0 +1,26 @@
+{
+  "name": "pythonexplained",
+  "version": "1.0.0",
+  "description": "A program that converts python code to english sentences, telling you what the code does.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raikee/PythonExplained.git"
+  },
+  "keywords": [
+    "education",
+    "conversion",
+    "languages",
+    "python",
+    "node"
+  ],
+  "author": "Joshua Weinstein <jweinst1@berkeley.edu> (https://github.com/jweinst1)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Raikee/PythonExplained/issues"
+  },
+  "homepage": "https://github.com/Raikee/PythonExplained#readme"
+}

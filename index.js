@@ -4,3 +4,4 @@
 //top level file for module
 
 var fstr = require("./Fstrings.js");
+var line = require("./src/line.js");

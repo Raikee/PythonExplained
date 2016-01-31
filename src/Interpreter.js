@@ -11,6 +11,12 @@ var categorize = (function () {
 
     categorize.isfuncdef = function (input) {
         if(/^def [^ ]+\([^\(\)]\)/.test(input.statement)) input.settag("func def");
+        else ;
+    };
+
+    categorize.isif = function (input){
+        if(/^if .+\:$/.test(input)) input.settag("if state");
+        else ;
     };
     return categorize;
 })();

@@ -1,5 +1,7 @@
 //file that contains the tokenizer and splitter
 
+var token = require("./token.js");
+
 var Splitter = (function () {
     function Splitter() {
     }
@@ -14,4 +16,16 @@ var Splitter = (function () {
         return news;
     };
     return Splitter;
+})();
+//exports splitter class
+exports.splitter = Splitter;
+
+var Tokenizer = (function () {
+    function Tokenizer() {
+
+    }
+    Tokenizer.tokenize = function (toklst) {
+
+    };
+    return Tokenizer;
 })();

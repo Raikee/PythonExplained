@@ -1,12 +1,7 @@
-#file for creating the hash key-values
-import os
-import sys
-
-from rooster.hashfunc import *
-from rooster.parsedata import *
 
 
-#creates a directory in python
+
+
 def createrooster(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)

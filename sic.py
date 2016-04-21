@@ -1,7 +1,7 @@
 
 
 
-
+x = lambda f: f+2
 def createrooster(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)

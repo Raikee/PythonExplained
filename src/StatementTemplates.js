@@ -7,5 +7,8 @@
 var StdStatements = {
     "def":function(name) {
         return "This is a function, named " + name +".\n";
+    },
+    "for":function(varname, iterable) {
+        
     }
 };

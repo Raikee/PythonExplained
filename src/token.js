@@ -3,8 +3,8 @@
  */
 //class to identify python tokens
 var token = (function () {
-    function token(symbol, label) {
-        this.symbol = symbol;
+    function token(string, label) {
+        this.string = string;
         this.label = label;
     }
     token.prototype.setlabel = function (label) {

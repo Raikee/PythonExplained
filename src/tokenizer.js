@@ -21,8 +21,9 @@ function SplitByTokens(string, arr) {
 }
 exports.SplitByTokens = SplitByTokens;
 
-function SplitByRegex(code, rxp) {
-    var splits = code.split(rxp);
+//automatically splits to python code
+function SplitByRegex(code) {
+    var splits = code.split(TokenExp);
     var tokens = [];
     for(var k=0;k<splits.length;k++) {
         if(splits[k]) {
@@ -36,7 +37,7 @@ exports.SplitByRegex = SplitByRegex;
 
 
 //safe splitting regexp to keep instances of python variables
-var TokenExp = /(class .*?:)|(def .*?\):)|(for .*? in .*?:)|(while .*?:)|(elif .*?:)|(if .*?:)|(#.*?\n)|(else:)|(\[.*?\])|(\{.*?\})|(\(.*?\))|(".*?")|(,)|(\.)|(:)|(\n)|(\t)|(#)| /;
+var TokenExp = /(class .*?:)|(lambda .*:.*\n)|(def .*?\):)|(for .*? in .*?:)|(while .*?:)|(elif .*?:)|(if .*?:)|(#.*?\n)|(else:)|(\[.*?\])|(\{.*?\})|(\(.*?\))|(".*?")|(,)|(\.)|(:)|(\n)|(\t)|(#)| /;
 
 exports.TokenExp = TokenExp;
 

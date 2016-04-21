@@ -36,7 +36,7 @@ exports.SplitByRegex = SplitByRegex;
 
 
 //safe splitting regexp to keep instances of python variables
-var TokenExp = /(#.*?\n)|(\[.*?\])|(\{.*?\})|(\(.*?\))|(".*?")|(,)|(\.)|(:)|(\n)|(\t)|(#)| /;
+var TokenExp = /(class .*?:)|(def .*?\):)|(for .*? in .*?:)|(while .*?:)|(elif .*?:)|(if .*?:)|(#.*?\n)|(else:)|(\[.*?\])|(\{.*?\})|(\(.*?\))|(".*?")|(,)|(\.)|(:)|(\n)|(\t)|(#)| /;
 
 exports.TokenExp = TokenExp;
 

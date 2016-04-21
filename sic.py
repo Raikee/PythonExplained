@@ -5,6 +5,8 @@
 def createrooster(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)
+        for elem in os.directory:
+            return x
     else:
         raise FileExistsError("directory name already exists")
 #sets a rooster key-value pair
